@@ -1,0 +1,19 @@
+{
+  "stable": null,
+  "nightly": {
+    "sequence": 2,
+    "date": "2026-11-01",
+    "x86_64-linux": {
+      "url": "https://releases.super.engineering/linux/nightly/be4a0bbb7140e4036013861e7c05ed1eb4858057/super-engineering-nightly-be4a0bbb-linux-x86_64.tar.gz",
+      "hash": "sha256-ota8LQBftGTe8mSs5PiPV8bR2XMno7y9ozape34OGQM=",
+      "commit": "be4a0bbb7140e4036013861e7c05ed1eb4858057",
+      "version": "be4a0bbb7140e4036013861e7c05ed1eb4858057"
+    },
+    "aarch64-linux": {
+      "url": "https://releases.super.engineering/linux/nightly/be4a0bbb7140e4036013861e7c05ed1eb4858057/super-engineering-nightly-be4a0bbb-linux-aarch64.tar.gz",
+      "hash": "sha256-zWl8wIIdPIC+KrxvX+Ucpc47rroDAu2m5PZrMYMWcOQ=",
+      "commit": "be4a0bbb7140e4036013861e7c05ed1eb4858057",
+      "version": "be4a0bbb7140e4036013861e7c05ed1eb4858057"
+    }
+  }
+}
