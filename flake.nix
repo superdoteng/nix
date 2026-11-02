@@ -1,5 +1,5 @@
 # The official Nix flake for super.engineering on Linux. It packages the signed release tarballs
-# that nix/sources.json pins (scripts/update-nix-pin.sh verifies each manifest before pinning).
+# pinned in nix/sources.json after signed-manifest verification.
 {
   description = "super.engineering: a native workspace for parallel coding agents";
 
