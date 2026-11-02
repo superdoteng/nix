@@ -44,7 +44,7 @@ inputs.super-engineering.url = "github:superdoteng/nix";
 
 Then include `inputs.super-engineering.packages.${pkgs.stdenv.hostPlatform.system}.default` in `environment.systemPackages` or `home.packages`, with `inputs` passed to your module.
 
-See the [installation guide](https://super.engineering/docs/install/) for more details. The default package currently follows nightly releases.
+See the [Nix installation guide](https://super.engineering/docs/nix/) for complete NixOS and Home Manager configurations, updates, and troubleshooting. The default package currently follows nightly releases.
 
 ## Update
 
