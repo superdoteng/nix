@@ -1,19 +1,19 @@
 {
   "stable": null,
   "nightly": {
-    "sequence": 4,
-    "date": "2026-11-05",
+    "sequence": 5,
+    "date": "2026-11-12",
     "x86_64-linux": {
-      "url": "https://releases.super.engineering/linux/nightly/4dc0659c8cc4689057025f84bc1f3949c7f05aaf/super-engineering-nightly-4dc0659c-linux-x86_64.tar.gz",
-      "hash": "sha256-9MWEAfrAvwb5xjeUolpRfoi8mGWRlV6I2NnVsaQAnhs=",
-      "commit": "4dc0659c8cc4689057025f84bc1f3949c7f05aaf",
-      "version": "4dc0659c8cc4689057025f84bc1f3949c7f05aaf"
+      "url": "https://releases.super.engineering/linux/nightly/b1d11339f356b5acaf1d119216c07e5879b6e953/super-engineering-nightly-b1d11339-linux-x86_64.tar.gz",
+      "hash": "sha256-r8JrCtBvUv+qZSpO26hV0eBGqhkyj57jD+HnA4ARwkU=",
+      "commit": "b1d11339f356b5acaf1d119216c07e5879b6e953",
+      "version": "b1d11339f356b5acaf1d119216c07e5879b6e953"
     },
     "aarch64-linux": {
-      "url": "https://releases.super.engineering/linux/nightly/4dc0659c8cc4689057025f84bc1f3949c7f05aaf/super-engineering-nightly-4dc0659c-linux-aarch64.tar.gz",
-      "hash": "sha256-4E2WTH4fY5eRC/UKN9iIcFv/SLhgQW6+VZEjlIFuIQI=",
-      "commit": "4dc0659c8cc4689057025f84bc1f3949c7f05aaf",
-      "version": "4dc0659c8cc4689057025f84bc1f3949c7f05aaf"
+      "url": "https://releases.super.engineering/linux/nightly/b1d11339f356b5acaf1d119216c07e5879b6e953/super-engineering-nightly-b1d11339-linux-aarch64.tar.gz",
+      "hash": "sha256-n4tqXicr2w0jG6+FhL5xGPndELafO0yggU0PjZBgqDo=",
+      "commit": "b1d11339f356b5acaf1d119216c07e5879b6e953",
+      "version": "b1d11339f356b5acaf1d119216c07e5879b6e953"
     }
   }
 }
