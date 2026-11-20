@@ -54,10 +54,15 @@
             program = "${package}/bin/super-engineering";
             meta.description = "Launch super.engineering";
           };
+          se = {
+            type = "app";
+            program = "${package}/bin/se";
+            meta.description = "The super.engineering CLI";
+          };
           sc = {
             type = "app";
-            program = "${package}/bin/sc";
-            meta.description = "The super.engineering CLI";
+            program = "${package}/bin/se";
+            meta.description = "The super.engineering CLI under its former name";
           };
         }
       );
@@ -71,9 +76,13 @@
         in
         {
           package = pkgs.runCommand "super-engineering-check" { } ''
+            ${package}/bin/se --version | grep -q '^super.engineering-cli '
             ${package}/bin/sc --version | grep -q '^super.engineering-cli '
             grep -q "^Exec=${package}/bin/super-engineering$" ${package}/share/applications/engineering.super.app.desktop
-            test -x ${package}/bin/sc-linux-x86_64 && test -x ${package}/bin/sc-linux-aarch64
+            # Tarballs from before the CLI rename name their remote helpers sc-linux-*.
+            for arch in x86_64 aarch64; do
+              test -x ${package}/bin/se-linux-$arch || test -x ${package}/bin/sc-linux-$arch
+            done
             if grep -q LD_LIBRARY_PATH ${package}/bin/super-engineering; then
               echo "the wrapper sets LD_LIBRARY_PATH" >&2
               exit 1

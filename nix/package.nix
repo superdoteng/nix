@@ -56,12 +56,14 @@ stdenv.mkDerivation {
   dontConfigure = true;
   dontBuild = true;
 
-  # bin/ keeps the remote CLIs (sc-linux-*) beside the app, which looks for them next to its
+  # bin/ keeps the remote CLIs (se-linux-*) beside the app, which looks for them next to its
   # executable.
   installPhase = ''
     runHook preInstall
     mkdir -p $out
     cp -r bin share $out/
+    # Tarballs from before the CLI rename ship only bin/sc; later ones ship bin/se and bin/sc.
+    [ -e $out/bin/se ] || ln -s sc $out/bin/se
     substituteInPlace $out/share/applications/engineering.super.app.desktop \
       --replace-fail "Exec=super-engineering" "Exec=$out/bin/super-engineering"
     runHook postInstall
